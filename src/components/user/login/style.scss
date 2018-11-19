@@ -1,0 +1,125 @@
+@import "@/lib/reset.scss";
+
+.conmin {
+  
+  input::-webkit-input-placeholder { /* WebKit browsers */ 
+    color: #9E9E9E; 
+    } 
+    input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */   
+    color: #9E9E9E; 
+    } 
+    input::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+    color: #9E9E9Eed; 
+    } 
+    input:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+    color: #9E9E9E;   
+    } 
+
+    @include rect(100%, 100%);
+  background-color: #fff;
+  .tota{
+    @include rect(100%,auto);
+    padding: 0 5%;
+    padding-top:0.12rem; 
+ p{
+   display: block;
+  font-size:0.16rem;
+  color: #62696C;
+  margin-bottom:0.78rem; 
+ }
+  }
+  .number{
+    @include rect(100%,0.45rem);
+    padding: 0 5%;
+    display: flex;
+    border-bottom:1px solid #EAEAEA;
+    span{
+      display: block;
+        @include rect(20%,0.45rem);
+        line-height: 0.45rem;
+        text-align: center;
+        font-size: 0.18rem;
+    }
+   input{
+        border:none;
+        background-color:#fff;
+        font-size:0.16rem;
+        color: #000;
+        border: none;
+    }
+  }
+  .num-State{
+    @include rect(100%,0.3rem);
+    padding: 0 5%;
+    color: #F64547;
+    line-height: 0.3rem;
+    margin-bottom: 0.1rem;
+    .numState{
+      @include rect(100%,100%);
+      color: #F64547;
+      text-align: left;
+      line-height: 0.3rem;
+      margin-bottom: 0.1rem;
+  
+  }
+}
+  .nextBtn{
+    display: block;
+    border: none;
+    @include rect(90%,0.45rem);
+    margin:0 5%;
+
+    background-color:#BCBCBC ;
+    color:#EBF7ED;
+    line-height: 0.45rem;
+    text-align: center;
+    font-size: 0.16rem;
+  }
+  .Coded{
+    @include rect(90%,0.3rem);
+    margin: 0 5%;
+    display: block;
+    margin-bottom: 0.35rem;
+    background: #fff;
+    border: none;
+  span{
+    display: block;
+    float: right;
+    @include rect(30%,0.3rem);
+    line-height: 0.3rem;
+ 
+    text-align: right;
+    color: #aaa;
+  }
+  }
+  .stepState{
+    @include rect(60%,0.3rem);
+    margin: 0 20%;
+    display: flex;
+    @include justify-content(content);
+  .span_wrap{
+        @include rect(auto,0.3rem);
+        margin: 0 auto;
+        display: flex;
+        @include justify-content(content);
+  span{
+    @include rect(0.3rem, 0.3rem);
+    border-radius: 0.3rem;
+    line-height: 0.3rem;
+    background-color: #BCBCBC;
+    color: #fff;
+    text-align: center;
+
+  }
+  .one_l,.two_l,.tree_l{
+    @include rect(0.33rem, 0.01rem);
+    margin-top: 0.15rem
+  }
+  .nowState{
+    background: #1AAE15;
+  }
+ }
+  }
+
+
+}

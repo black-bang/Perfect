@@ -1,0 +1,178 @@
+@import "@/lib/reset.scss";
+
+.conmin {
+  @include rect(100%, 100%);
+  background-color: #fff;
+  .tota {
+    @include rect(100%, auto);
+    padding: 0 5%;
+    padding-top: 0.12rem;
+    position: relative;
+
+    p {
+      color: #1aae15;
+      display: block;
+      margin-bottom: 0.4rem;
+      width: 25%;
+      .back {
+        position: absolute;
+        display: inline-block;
+        width: 0.1rem;
+        height: 0.1rem;
+        border-top: 1px solid #1aae15;
+        border-right: 1px solid #1aae15;
+        left: 0.1rem;
+        top: 0;
+        bottom: -0.08rem;
+        margin: auto;
+        transform: rotate(225deg);
+      }
+    }
+  }
+  .number {
+    @include rect(100%, 0.45rem);
+    padding: 0 5%;
+    display: flex;
+    color: #909090;
+
+    span {
+      display: block;
+      @include rect(20%, 0.45rem);
+      line-height: 0.45rem;
+      font-size: 0.16rem;
+    }
+    p {
+      border: none;
+      background-color: #fff;
+      color: #909090;
+      @include rect(70%, 0.45rem);
+      line-height: 0.45rem;
+    }
+  }
+  .numState {
+    @include rect(100%, 0.3rem);
+    padding: 0 5%;
+    color: #a5acae;
+    background: #fff;
+    border: none;
+    margin-bottom: 0.1rem;
+
+    .Ms {
+      @include rect(50%, 0.3rem);
+      text-align: left;
+      line-height: 0.3rem;
+      font-size: 0.16rem;
+      float: left;
+      color: #333;
+    }
+    span {
+      @include rect(40%, 0.3rem);
+      line-height: 0.3rem;
+      color: #323232;
+      margin-left: 1%;
+      font-size: 0.16rem;
+      float: left;
+    }
+  }
+  .Code {
+    @include rect(90%, 0.45rem);
+    margin: 0 5%;
+    display: flex;
+    .security-code-wrap {
+      overflow: hidden;
+      @include rect(100%, 0.45rem);
+    }
+    .security-code-container {
+      margin: 0;
+      padding: 0;
+      display: flex;
+   
+      .field-wrap {
+        list-style: none;
+        display: block;
+        @include rect(0.45rem, 0.45rem);
+        background-color: #eeeeee;
+        border: none;
+        text-align: center;
+        line-height: 0.45rem;
+        margin-left: 10%;
+        .char-field {
+          font-style: normal;
+        }
+      }
+    }
+    .input-code {
+      position: absolute;
+      left: -9999px;
+      top: -99999px;
+      width: 0;
+      height: 0;
+      opacity: 0;
+      overflow: visible;
+      z-index: -1;
+    }
+
+  }
+  .nextBtn {
+    @include rect(40%, 0.45rem);
+    margin: 0 5%;
+    float: right;
+    text-align: right;
+    padding-right: 6%;
+    position: relative;
+    color: #555d61;
+    margin-bottom: 0.13rem;
+    .next {
+      position: absolute;
+      display: inline-block;
+      width: 0.1rem;
+      height: 0.1rem;
+      border-top: 1px solid #999;
+      border-right: 1px solid #999;
+      right: 0.1rem;
+      top: 0;
+      bottom: 0.28rem;
+      margin: auto;
+      transform: rotate(45deg);
+    }
+  }
+  .err {
+    display: block;
+    @include rect(80%, 0.3rem);
+    margin: 0 5%;
+    margin-left: 15%;
+    text-align: left;
+    line-height: 0.3rem;
+    margin-bottom: 0.4rem;
+    color: #f64547;
+  }
+  .stepState {
+    @include rect(60%, 0.3rem);
+    margin: 0 20%;
+    display: flex;
+    @include justify-content(content);
+    .span_wrap{
+          @include rect(auto,0.3rem);
+          margin: 0 auto;
+          display: flex;
+          @include justify-content(content);
+    span {
+      @include rect(0.3rem, 0.3rem);
+      border-radius: 0.3rem;
+      line-height: 0.3rem;
+      text-align: center;
+      background-color: #bcbcbc;
+      color: #fff;
+    }
+    .one_l,
+    .two_l,
+    .tree_l {
+      @include rect(0.33rem, 0.01rem);
+      margin-top: 0.15rem;
+    }
+    .nowState {
+      background: #1aae15;
+    }
+  }
+  }
+}
